@@ -1,0 +1,39 @@
+### Register
+POST http://127.0.0.1:8000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "abc",
+  "password": "12345678"
+}
+
+### Login
+POST http://127.0.0.1:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "abc",
+  "password": "12345678"
+}
+
+
+
+
+### Add Sweet
+POST http://127.0.0.1:8000/api/sweets
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzNjIzNDkyLCJpYXQiOjE3NTM2MjMxOTIsImp0aSI6IjY1MWJiYWQ4MjhhMTQ5MWJiZTQ5ZmNjMzg1YTg3YTRlIiwidXNlcl9pZCI6IjQifQ.nahyGsvCn1SzM6QJzGU8MzF70_8Did9CYWUQHf5t4SA
+
+{
+  "name": "MAVA Jalebi",
+  "category": "Good",
+  "price": 456,
+  "quantity": 30
+}
+
+
+
+
+### List Sweets
+GET http://127.0.0.1:8000/api/sweets
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzNjIzNDkyLCJpYXQiOjE3NTM2MjMxOTIsImp0aSI6IjY1MWJiYWQ4MjhhMTQ5MWJiZTQ5ZmNjMzg1YTg3YTRlIiwidXNlcl9pZCI6IjQifQ.nahyGsvCn1SzM6QJzGU8MzF70_8Did9CYWUQHf5t4SA
